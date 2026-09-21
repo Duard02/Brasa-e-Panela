@@ -1,0 +1,346 @@
+/* =========================================
+   VARIÁVEIS DE CORES E FONTES
+   ========================================= */
+:root {
+    --bg-dark: #121212;
+    --bg-light: #f5f5f5;
+    --primary-red: #d32f2f;
+    --primary-yellow: #ffb300;
+    --whatsapp-green: #25D366;
+    --text-light: #ffffff;
+    --text-dark: #333333;
+    --font-main: 'Poppins', sans-serif;
+    --font-accent: 'Caveat', cursive;
+}
+
+/* =========================================
+   RESET BÁSICO
+   ========================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-main);
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+    scroll-behavior: smooth;
+}
+
+/* =========================================
+   CABEÇALHO (NAVBAR)
+   ========================================= */
+.navbar {
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.flame-icon {
+    color: var(--primary-yellow);
+    font-size: 2rem;
+}
+
+.logo h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.logo span {
+    font-size: 0.6rem;
+    color: #aaaaaa;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: var(--text-light);
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover, .nav-links a.active {
+    color: var(--primary-yellow);
+}
+
+.btn-whatsapp {
+    background-color: transparent;
+    border: 1px solid var(--whatsapp-green);
+    color: var(--whatsapp-green);
+    padding: 8px 16px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn-whatsapp:hover {
+    background-color: var(--whatsapp-green);
+    color: var(--bg-dark);
+}
+
+.mobile-menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* =========================================
+   HERO SECTION (Principal)
+   ========================================= */
+.hero {
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4rem 5%;
+    min-height: 80vh;
+}
+
+.hero-content {
+    max-width: 50%;
+}
+
+.badge {
+    color: #aaaaaa;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+}
+
+.hero-title {
+    font-size: 3.5rem;
+    line-height: 1.1;
+    margin: 15px 0;
+}
+
+.hero-title span {
+    font-family: var(--font-accent);
+    color: var(--primary-yellow);
+    font-size: 4rem;
+    font-weight: normal;
+}
+
+.hero-buttons {
+    margin-top: 30px;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.btn-whatsapp.large {
+    background-color: var(--whatsapp-green);
+    color: var(--bg-dark);
+    padding: 12px 24px;
+}
+
+.btn-outline {
+    border: 1px solid white;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 20px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn-outline:hover {
+    background-color: white;
+    color: var(--bg-dark);
+}
+
+.hero-image img {
+    max-width: 100%;
+    border-radius: 50%;
+    box-shadow: 0 0 30px rgba(0,0,0,0.5);
+}
+
+/* =========================================
+   SEÇÃO CARDÁPIO & CATEGORIAS
+   ========================================= */
+.menu-section {
+    padding: 4rem 5%;
+}
+
+.section-title {
+    font-family: var(--font-accent);
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.menu-category {
+    margin-bottom: 4rem;
+}
+
+.category-title {
+    font-family: var(--font-accent);
+    font-size: 2.2rem;
+    color: var(--primary-yellow);
+    margin-bottom: 1.5rem;
+    text-align: center;
+    background-color: var(--bg-dark);
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* Estilo Individual dos Cards */
+.card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 300px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 20px;
+    flex-grow: 1; /* Preenche o espaço restante */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Oculta o espaço da imagem nos cards que não têm foto para ficar alinhado */
+.card:not(:has(img)) .card-content {
+    height: 100%;
+    justify-content: space-between;
+}
+
+.card-content h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: var(--bg-dark);
+}
+
+.card-content p {
+    font-size: 0.85rem;
+    color: #666;
+    margin-bottom: 15px;
+    flex-grow: 1; /* Empurra o preço e o botão para o fundo */
+}
+
+.price {
+    display: block;
+    color: var(--primary-red);
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.btn-add {
+    width: 100%;
+    background-color: var(--primary-red);
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn-add:hover {
+    background-color: #b71c1c;
+}
+
+/* Destaque para a Jantinha Principal */
+.highlight-card {
+    border: 2px solid var(--primary-yellow);
+    transform: scale(1.05);
+}
+
+/* =========================================
+   RESPONSIVIDADE (Celulares)
+   ========================================= */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 2rem;
+    }
+    
+    .hero-content {
+        max-width: 100%;
+    }
+    
+    .hero-buttons {
+        justify-content: center;
+    }
+    
+    .hero-image {
+        margin-top: 40px;
+    }
+
+    .nav-links, .navbar .btn-whatsapp {
+        display: none;
+    }
+
+    .mobile-menu-btn {
+        display: block;
+    }
+    
+    .nav-links.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: var(--bg-dark);
+        padding: 20px;
+        text-align: center;
+    }
+
+    .highlight-card {
+        transform: scale(1);
+    }
+}
