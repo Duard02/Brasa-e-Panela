@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jantinha do Zé</title>
+
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Poppins:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- CABEÇALHO -->
+    <header class="navbar">
+        <div class="logo">
+            <i class="fa-solid fa-fire flame-icon"></i>
+            <div>
+                <h1>Brasa e Panela</h1>
+                <span>O SLOGAN</span>
+            </div>
+        </div>
+
+        <nav class="nav-links">
+            <a href="#inicio" class="active">Início</a>
+            <a href="#cardapio">Cardápio</a>
+            <a href="#sobre">Sobre nós</a>
+            <a href="#como-pedir">Como pedir</a>
+            <a href="#avaliacoes">Avaliações</a>
+        </nav>
+
+        <a href="#" class="btn-whatsapp">
+            <i class="fa-brands fa-whatsapp"></i> Pedir agora
+        </a>
+
+        <!-- Botão Menu Mobile -->
+        <button class="mobile-menu-btn" aria-label="Abrir menu">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </header>
+
+    <!-- HERO SECTION (Principal) -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <span class="badge">JANTINHAS • CHURRASQUINHO • DELIVERY</span>
+            <h2 class="hero-title">Aquela jantinha<br><span>que salva a noite.</span></h2>
+            <p>Churrasquinho, arroz, feijão, vinagrete e aquele sabor caseiro que você já conhece.</p>
+            <div class="hero-buttons">
+                <a href="#" class="btn-whatsapp large"><i class="fa-brands fa-whatsapp"></i> Pedir agora</a>
+                <a href="#cardapio" class="btn-outline"><i class="fa-solid fa-list"></i> Ver cardápio</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <!-- Coloque a imagem do prato aqui -->
+            <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                alt="Prato de jantinha completo">
+        </div>
+    </section>
+
+    <!-- CARDÁPIO -->
+    <section id="cardapio" class="menu-section">
+        <h3 class="section-title">Nosso Cardápio</h3>
+
+        <!-- Categoria 1: A Jantinha (Destaque) -->
+        <div class="menu-category">
+            <h4 class="category-title">A Famosa Jantinha</h4>
+            <div class="cards-container">
+                <div class="card highlight-card">
+                    <img src="https://images.unsplash.com/photo-1544025162-811114b0b8d5?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                        alt="Jantinha Completa">
+                    <div class="card-content">
+                        <h4>Jantinha Completa</h4>
+                        <p>Arroz, feijão tropeiro, mandioca derretendo, vinagrete fresquinho + 1 Espetinho à sua
+                            escolha.</p>
+                        <span class="price">R$ 25,00</span>
+                        <button class="btn-add"><i class="fa-solid fa-cart-shopping"></i> PEDIR JANTINHA</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Categoria 2: Espetinhos Individuais -->
+        <div class="menu-category">
+            <h4 class="category-title">Espetinhos Individuais</h4>
+            <div class="cards-container">
+                <div class="card">
+                    <div class="card-content">
+                        <h4>Espetinho de Alcatra</h4>
+                        <span class="price">R$ 12,00</span>
+                        <button class="btn-add"><i class="fa-solid fa-cart-shopping"></i> ADICIONAR</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h4>Espetinho de Franbacon</h4>
+                        <span class="price">R$ 12,00</span>
+                        <button class="btn-add"><i class="fa-solid fa-cart-shopping"></i> ADICIONAR</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-content">
+                        <h4>Espetinho de Contra Filé</h4>
+                        <span class="price">R$ 12,00</span>
+                        <button class="btn-add"><i class="fa-solid fa-cart-shopping"></i> ADICIONAR</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-content">
+                        <h4>Espetinho de Linguiça</h4>
+                        <span class="price">R$ 10,00</span>
+                        <button class="btn-add"><i class="fa-solid fa-cart-shopping"></i> ADICIONAR</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-content">
+                        <h4>Espetinho de Almôndega</h4>
+                        <span class="price">R$ 10,00</span>
+                        <button class="btn-add"><i class="fa-solid fa-cart-shopping"></i> ADICIONAR</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-content">
+                        <h4>Espetinho Meio Tulipa</h4>
+                        <span class="price">R$ 10,00</span>
+                        <button class="btn-add"><i class="fa-solid fa-cart-shopping"></i> ADICIONAR</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-content">
+                        <h4>Espetinho de Almôndega com Queijo</h4>
+                        <span class="price">R$ 12,00</span>
+                        <button class="btn-add"><i class="fa-solid fa-cart-shopping"></i> ADICIONAR</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-content">
+                        <h4>Espetinho de Almôndega com Bacon</h4>
+                        <span class="price">R$ 12,00</span>
+                        <button class="btn-add"><i class="fa-solid fa-cart-shopping"></i> ADICIONAR</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-content">
+                        <h4>Espetinho de Cupim</h4>
+                        <span class="price">R$ 12,00</span>
+                        <button class="btn-add"><i class="fa-solid fa-cart-shopping"></i> ADICIONAR</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-content">
+                        <h4>Espetinho de Coração</h4>
+                        <span class="price">R$ 10,00</span>
+                        <button class="btn-add"><i class="fa-solid fa-cart-shopping"></i> ADICIONAR</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-content">
+                        <h4>Espetinho de Contrabacon</h4>
+                        <span class="price">R$ 12,00</span>
+                        <button class="btn-add"><i class="fa-solid fa-cart-shopping"></i> ADICIONAR</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-content">
+                        <h4>Espetinho de Fraldinha</h4>
+                        <span class="price">R$ 12,00</span>
+                        <button class="btn-add"><i class="fa-solid fa-cart-shopping"></i> ADICIONAR</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-content">
+                        <h4>Espetinho de Provolone</h4>
+                        <span class="price">R$ 10,00</span>
+                        <button class="btn-add"><i class="fa-solid fa-cart-shopping"></i> ADICIONAR</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-content">
+                        <h4>Espetinho Romeu e Julieta</h4>
+                        <span class="price">R$ 10,00</span>
+                        <button class="btn-add"><i class="fa-solid fa-cart-shopping"></i> ADICIONAR</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Categoria 3: Acompanhamentos Individuais & Porções -->
+        <div class="menu-category">
+            <h4 class="category-title">Acompanhamentos & Porções</h4>
+            <div class="cards-container">
+                <div class="card">
+                    <div class="card-content">
+                        <h4>Acompanhamentos</h4>
+                        <p>Arroz, Feijão Tropeiro, Mandioca ou Vinagrete.</p>
+                        <span class="price">R$ 8,00 (cada)</span>
+                        <button class="btn-add"><i class="fa-solid fa-cart-shopping"></i> ADICIONAR</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h4>Batata Frita</h4>
+                        <p>Porção inteira, super crocante.</p>
+                        <span class="price">R$ 20,00</span>
+                        <button class="btn-add"><i class="fa-solid fa-cart-shopping"></i> ADICIONAR</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Categoria 4: Caldos -->
+        <div class="menu-category">
+            <h4 class="category-title">Caldos</h4>
+            <div class="cards-container">
+                <div class="card">
+                    <div class="card-content">
+                        <h4>Caldo de Feijão</h4>
+                        <span class="price">R$ 20,00</span>
+                        <button class="btn-add"><i class="fa-solid fa-cart-shopping"></i> ADICIONAR</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h4>Caldo de Frango</h4>
+                        <span class="price">R$ 20,00</span>
+                        <button class="btn-add"><i class="fa-solid fa-cart-shopping"></i> ADICIONAR</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Categoria 5: Macarrão -->
+        <div class="menu-category">
+            <h4 class="category-title">Macarrão ou Mexidão</h4>
+            <div class="cards-container">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1612874742237-6526221588e3?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                        alt="Macarrão na Chapa">
+                    <div class="card-content">
+                        <h4> Montado por Você</h4>
+                        <p>Feito na hora!</p>
+                        <span class="price">R$ 24,90</span>
+                        <button class="btn-add"><i class="fa-solid fa-cart-shopping"></i> MONTAR MACARRÃO</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Categoria 6: Bebidas -->
+        <div class="menu-category">
+            <h4 class="category-title">Bebidas</h4>
+            <div class="cards-container">
+                <div class="card">
+                    <div class="card-content">
+                        <h4>Refrigerante Lata</h4>
+                        <p>Coca-Cola, Guaraná, Fanta.</p>
+                        <span class="price">R$ 5,00</span>
+                        <button class="btn-add"><i class="fa-solid fa-cart-shopping"></i> ADICIONAR</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h4>Refrigerante 2L</h4>
+                        <p>Coca-Cola ou Guaraná Antarctica.</p>
+                        <span class="price">R$ 12,00</span>
+                        <button class="btn-add"><i class="fa-solid fa-cart-shopping"></i> ADICIONAR</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seu JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
