@@ -37,7 +37,7 @@ links.forEach(link => {
 const botoesAdicionar = document.querySelectorAll('.btn-add');
 
 // Número do estabelecimento configurado
-const numeroWhatsApp = "5534999999999"; 
+const numeroWhatsApp = "5534xx"; 
 
 botoesAdicionar.forEach(botao => {
     botao.addEventListener('click', (evento) => {
